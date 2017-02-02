@@ -1,2 +1,3 @@
-# this is a comment
+# This is a comment
 print("Hello World")
+print("Hello people")
