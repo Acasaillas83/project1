@@ -1,3 +1,4 @@
+# https://github.com/Acasaillas83/project1     Alejandro Casillas
 from PIL import Image # This allows to import images from pillow and use them
 
 def medianOdd(myList):    #stores the mylist in the variables listLenth
@@ -24,12 +25,12 @@ redPixelList = [] #to store the red pixel
 greenPixelList = [] #to store the green pixel
 bluePixelList = [] #to store the blue pixel
 
-canvas = Image.new("RGB", (pictureWidth, picturwHeight)) #to make a new image canvas so that the finish product can go on it
+canvas = Image.new("RGB", (pictureWidth, picturwHeight)) #to make a new image so that the finish product can go on it
 
 for x in range(pictureWidth): # this loop is to check each pixel on all 9 images and take out the pixel 
     for y in range(picturwHeight): #that most have to make a picture without the guy
         for myImage in imgList: # to run this loop through every pixel in all 9 images
-            myBlue, myGreen, myRed = myImage.getpixel((x,y)) # this gets the pixels
+            myRed, myGreen, myBlue = myImage.getpixel((x,y)) # this gets the pixels
             redPixelList.append(myRed) # to get the list of pixels of this color
             greenPixelList.append(myGreen) # to get the list of all pixels of this color
             bluePixelList.append(myBlue) # to get the list of all pixels of this color
